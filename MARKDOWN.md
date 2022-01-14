@@ -52,7 +52,7 @@ string은 보여지는 부분, url은 연결할 곳을 나타냄
 
 ![string](img_url)  링크랑 비슷한 형식이지만 앞에 느낌표를 삽입한다!
 
-![string](MARKDOWN.assets/cat-16420562006231.jpeg)
+![string](MARKDOWN.assets/cat-16421682377831.jpeg)
 
 
 
