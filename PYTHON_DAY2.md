@@ -55,7 +55,20 @@
 
 **Packing & Unpacking**
 
-* 이 부분들 다시 공부하기!
+```python
+x, *y = 1, 2, 3, 4
+print(x)
+print(y)
+print(type(x))
+print(type(y))
+==========================
+a = 1, 2, 3
+print(type(a)) #<class tuple>
+b, c, d = a #unpacking; 말 그대로 짐을 푼다
+print(b, c, d) # 1, 2, 3 이 출력
+b, *c = a #unpacking
+print(b, c) # 1, [2, 3]이 출력
+```
 
 
 
@@ -169,3 +182,4 @@ for idx, member in enumerate(members):
 
 * break: 반복문 종료
 * continue
+* pass
