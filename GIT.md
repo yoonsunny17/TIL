@@ -82,7 +82,7 @@ working directory (untracked) -- **git add** \-- staging area(tracked(git):변�
   * 근데 아까 그냥 git push까지 입력하고 명령햇는데 가능했던 이유?
     * branch가 하나였기 때문에 상관이 없었던 것이다!
 
-github repo와 loca repo 연동 시키는 작업!
+github repo와 local repo 연동 시키는 작업!
 
 - git remote add origin {remote_repo} :remote를 더해줄거야
 - git push *-u* origin master
