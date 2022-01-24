@@ -71,3 +71,30 @@ print(b) #원상태 그대로 출력
 
 ### 얕은 복사(Shallow copy)와 깊은 복사(Deep copy)
 
+> 할당(Assignment)
+
+
+
+> 얕은 복사(Shallow copy)
+
+* 복사하는 리스트의 원소가 주소를 참조하는 경우
+
+```python
+a = [1, 2, ['a', 'b']]
+b = a[:]
+print(a, b)
+b[2][0] = 0
+print(a, b) #a, b 모두 동일한 리스트로 출력
+```
+
+> 깊은 복사(Deep copy)
+
+```python
+import copy
+a = [1, 2, ['a', 'b']]
+b = compy.deepcopy(a) 
+print(a, b) # [1, 2, ['a', 'b']]  [1, 2, ['a', 'b']]
+b[2][0] = 0
+print(a, b) # [1, 2, ['a', 'b']]  [1, 2, [0, 'b']]
+```
+
