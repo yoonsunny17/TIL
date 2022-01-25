@@ -124,3 +124,16 @@ print(id(deep_list)) #=> deep_list는 두개와 다른 id 출력
 
 ![](python_day7.assets/day7_5_deep copy.png)
 
+
+
+
+
+******
+
+> 디버깅
+
+> assert
+
+* assert<표현식>, <메세지>
+* 일반적으로 디버깅 용도로 사용
+* <표현식>이 False이면; 항상 **AssertionError** 가 난다!!
