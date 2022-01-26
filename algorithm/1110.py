@@ -21,3 +21,72 @@ print(cnt)
 
 
 
+##########종현님과 매우 매우 매우 동일한 풀이방법#########
+
+
+
+
+
+
+
+
+
+
+##################현진님####################
+
+N = int(input())
+rlt = N
+a = 0
+
+while True:
+    # 10의 자리수
+    x = N // 10
+    # 1의 자리수
+    y = N % 10
+
+    # string으로 바꿔서 이어붙인 후 int로 변환
+    N = int('%d'%y + '%d'%((x+y)%10))
+    a += 1
+
+    if rlt == N:
+        print(a)
+        break
+
+
+
+
+##################숙경님######################
+
+
+
+# string으로 변환해서 int로 재변환 하는것이 소름!
+
+
+
+
+
+
+
+
+
+
+
+
+
+######## 지훈님 ###########
+
+# 데이터 입력
+N = int(input())
+
+# 계산
+list_nums = [N]
+while True:
+    if N < 10:
+        N = int(str(N)[-1] + str(int(str(N * 10)[0]) + int(str(N * 10)[-1]))[-1])
+    else:
+        N = int(str(N)[-1] + str(int(str(N)[0]) + int(str(N)[-1]))[-1])
+    if N in list_nums:
+        break
+    list_nums.append(N)
+
+print(len(list_nums))
