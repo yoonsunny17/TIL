@@ -12,12 +12,21 @@ dwarfs = [int(input()) for _ in range(9)]
 dwarfs.sort()
 cnt = sum(dwarfs)
 for i in range(9):
-    for j in range(i+1, 9):
-        if cnt - (dwarfs[j] + dwarfs[i]) == 100: #IndexError: list assignment index out of range
+    for j in range(9):
+        if dwarfs[i] == dwarfs[j]:
+            continue
+
+        elif cnt - (dwarfs[i] + dwarfs[j]) == 100: #IndexError: list assignment index out of range
+            
             del dwarfs[j]
             del dwarfs[i]
+
+    if len(dwarfs) == 7:
+        break
             
-            print(dwarfs)
+
+
+print(dwarfs)
     
 
 
