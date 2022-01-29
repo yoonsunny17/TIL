@@ -1,10 +1,17 @@
 A, B, C = map(int, input().split())
 D = int(input())
 
-hours = list(A)
-minute = list(B)
-seconds = list(C)
+hours = list()
+for h in range(24):
+    hours.append(h)
 
+minutes = list()
+for m in range(60):
+    minutes.append(m)
+
+seconds = list()
+for s in range(60):
+    seconds.appned(s)
 
 '''
 0 <= A <= 23
