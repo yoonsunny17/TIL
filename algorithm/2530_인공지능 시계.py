@@ -1,17 +1,24 @@
-A, B, C = map(int, input().split())
+H, M, S = map(int, input().split())
 D = int(input())
 
-hours = list()
-for h in range(24):
-    hours.append(h)
+S += D % 60
+D = D // 60
+if S >= 60:
+    S -= 60
+    M += 1
 
-minutes = list()
-for m in range(60):
-    minutes.append(m)
+M += D % 60
+D = D // 60
+if M >= 60:
+    M -= 60
+    H += 1
 
-seconds = list()
-for s in range(60):
-    seconds.appned(s)
+H += D % 24
+if H >= 24:
+    H -= 24
+
+print(H, M, S)
+
 
 '''
 0 <= A <= 23
@@ -22,10 +29,4 @@ for s in range(60):
 1시간 = 60분
 1분 = 60초
 '''
-'''
-C + D 기준으로 생각을 해야할 것 같음
-분 단위를 바꿀 수 있는 범위인지
-시 단위를 바꿀 수 있는 범위인지
 
-리스트로 해서 하는 게 나을려나
-'''
