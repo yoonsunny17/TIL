@@ -10,7 +10,7 @@ girl: 자기가 받은 수를 중심으로 좌우 대칭이면서 가장 많은 
 
 '''
 
-from re import X
+# from re import X
 
 
 switch_numb = int(input()) # 스위치 개수
@@ -45,10 +45,6 @@ for student in students:
 
 
 
-for switch in switches:
-    print
-                # #좌우대칭
-                # if switches[x-1] == switches[x+1]:
 
 
     
