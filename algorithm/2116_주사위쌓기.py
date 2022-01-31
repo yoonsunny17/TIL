@@ -13,3 +13,22 @@ A, B, C, D, E, F면으로 이루어진 주사위라고 했고, 전개도에서 �
 주사위를 다 쌓았으면, 각 주사위에서 옆면이 가능한 key:value 4쌍이 있을 것
 각각의 dict에서 max값을 추출하고, n개의 max값을 더하면 되지 않을까?
 '''
+
+# (A, F) => B, C, D, E // (0, 5) => 1, 2, 3, 4
+# (B, D) => A, C, E, F // (1, 3) => 0, 2, 4, 5
+# (C, E) => A, B, D, F // (2, 4) => 0, 1, 3, 5
+
+N = int(input()) # 주사위 개수
+dice_side = ['A', 'B', 'C', 'D', 'E', 'F'] # 주사위 전개도 순서
+for _ in range(N):
+    dice_numb = list(map(int, input().split()))
+    
+
+
+
+# N = int(input())
+# for _ in range(N):
+#     numbers = list(map(int, input().split()))
+#     for i in numbers:
+#         dice_dict = dict(A=numbers[0], B=numbers[1], C=numbers[2], D=numbers[3], E=numbers[4], F=numbers[5])
+
