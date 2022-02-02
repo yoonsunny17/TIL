@@ -29,72 +29,58 @@ for j in range(len(width)):
     length.append(width[j][0])
     height.append(width[j][1])
 
-print(length)
-print(height)
+# print(length)
+# print(height)
 
-total = 0
-left_area = 0
-right_area = 0
-center_area = 0
 
-# left_area = 0
-# 기둥 높이 비교하면서 창고 넓이 더해가기
+left_area = []
+right_area = []
+center_area = []
+
+
 for k in range(N):
     if height[k] is max(height):
-        center_area += height[k]
+        center_area.append(height[k])
 
-print(center_area)
+        # center_area += height[k]
+
+
+# print(center_area)
 
 # 왼쪽 기둥부터 max 기둥전까지
-for l in range(k):
-    if l + 1 == k:
+
+for l in range(N):
+    if height[l] is max(height):
         break
 
-    if height[l] < height[l+1]:
-        left_area += height[l] * (length[l+1] - length[l])
-
-    # elif height[l] == height[l+1]:
+    if height[l] <= height[l+1]:
+        left_area.append(height[l] * (length[l+1] - length[l]))
 
     else:
-        left_area += height[l] * (length[l+1] - length[l])
+        left_area.append(height[l] * (length[l+1] - length[l]))
         height[l+1] = height[l]
 
-print(left_area)
+# print(left_area)
 
-# 오른쪽 기둥부터 max 기둥전까지 revers idx
-for r in range(N-1, k, -1):
-    if r - 1 == k:
+# length, height list에서 왼쪽 idx 제거 후 역순 sort (오른쪽 기둥부터 max 기둥 계산 위해)
+
+
+# 오른쪽 기둥부터 max 기둥전까지 reverse idx
+for r in range(N-1, 0, -1):
+    if height[r] is max(height):
         break
 
     if height[r] <= height[r-1]:
-        right_area += height[r] * (length[r-1] - length[r])
+        right_area.append(height[r] * (length[r] - length[r-1]))
 
     else:
+        right_area.append(height[r] * (length[r] - length[r-1]))
         height[r-1] = height[r]
 
-print(right_area)
-
-
-total_area = center_area + left_area + right_area
-
-print(total_area)
-print(length)
-print(height)
-
-    # if k + 1 == N:
-    #     break # indexError 방지
-
-    # if height[k] <= height[k+1]:
-    #     left_area += height[k] * (length[k+1] - length[k])
-
-
-
-
-
-# print(length) 위치 순서대로 정렬된 length list
-# for k in range(len(width)):
-#     height.append(width[k][1])
-    
+# print(right_area)
+        
+    rlt = sum(center_area) + sum(right_area) + sum(left_area)
+print(rlt)
 
 
 
