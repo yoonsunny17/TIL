@@ -31,12 +31,19 @@ right_area = 0
 center_area = 0
 
 # 진짜 조금만 고치면 될듯... 지금 width[j][1] is max 라고 하니까 j가 max일때로 하는거같기도
+
 for j in range(len(width)):
-    if (width[j][1] is max) or (j+1 == len(width)):
+    if j+1 == len(width):
+        break
+    if (width[j][1] < width[j+1][1]) is None:
         center_area = width[j][1]
         break
     else:
         left_area += width[j][1] * (width[j+1][0]- width[j][0])
+     
+    if (width[j][1] is max) or (j+1 == len(width)):
+        center_area = width[j][1]
+        break
     # left 부터 max까지   
         
 
@@ -48,7 +55,7 @@ for k in range(-1, -len(width)):
         right_area += width[k][1] * (width[k-1][0]- width[k][0])
     # right 부터 max까지 reverse idx
 
-# total = left_area + right_area + center_area
+total = left_area + right_area + center_area
 
 print(total)
 
