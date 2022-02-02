@@ -32,10 +32,11 @@ center_area = 0
 
 # 진짜 조금만 고치면 될듯... 지금 width[j][1] is max 라고 하니까 j가 max일때로 하는거같기도
 
+
 for j in range(len(width)):
     if j+1 == len(width):
         break
-    if (width[j][1] < width[j+1][1]) is None:
+    if width[j][1] is max:
         center_area = width[j][1]
         break
     else:
@@ -45,14 +46,23 @@ for j in range(len(width)):
         center_area = width[j][1]
         break
     # left 부터 max까지   
+
+for k in range(-1, -len(width)):
+    if k-1 == len(width):
+        break
+    if width[k][1] is max:
+        break
+    else:
+        right_area += width[k][1] * (width[k-1][0] - width[k][0])
+
         
 
 # 진짜 조금만 고치면 될듯... 지금 width[k][1] is max 라고 하니까 k가 max일때로 하는거같기도
-for k in range(-1, -len(width)):
-    if (width[k][1] is max) or (k-1 == -len(width)):
-        break
-    else:
-        right_area += width[k][1] * (width[k-1][0]- width[k][0])
+# for k in range(-1, -len(width)):
+#     if (width[k][1] is max) or (k-1 == -len(width)):
+#         break
+#     else:
+#         right_area += width[k][1] * (width[k-1][0]- width[k][0])
     # right 부터 max까지 reverse idx
 
 total = left_area + right_area + center_area

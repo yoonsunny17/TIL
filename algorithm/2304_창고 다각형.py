@@ -1,19 +1,13 @@
-N = int(input()) # 기둥의 개수
-length = [] # L(기둥의 왼쪽 면의 위치) 리스트
-height = [] # H(기둥의 높이) 리스트
-width = [] # [L, H] 받을 이차원 리스트
+N = int(input()) # 기둥 개수
+length = [] # 기둥 왼쪽 면 위치 L list
+height = [] # 기둥 높이 H list
+width = [] # L, H 이차원 list
+
 for _ in range(N):
-    L, H = map(int, input().split()) # 각 기둥의 왼쪽 면의 위치 및 높이
+    L, H = map(int, input().split())
     length.append(L)
     height.append(H)
 
-    # # 가로길이: length (max - min) + 1
-    # l = (max(length) - min(length)) + 1
-
-    # # 최대 면적
-    # max_width = l * max(height)
-
-    # length 오름차순으로 이차원 리스트 요소 정렬
     while len(length) != 0:
         i = 0
         if length[i] is min(length):
@@ -23,49 +17,84 @@ for _ in range(N):
 
         else:
             i += 1
-            
-    width = sorted(width)
-    # print(width)
 
-    # center_area = 0 # 최종 면적 받을 변수
-    # left_area = 0 
-    # right_area = 0 
+    width = sorted(width) # L 기준으로 오름차순 정렬
+
+# print(width) => L 기준 오름차순 정렬
+# length, height 리스트는 다시 빈 리스트가 됨
+# 이제 다시 width에 넣은 순서대로 length, height에 요소 넣어주기
+
+# 기둥 위치 순서대로 정렬된 length, heigth list
+for j in range(len(width)):
+    length.append(width[j][0])
+    height.append(width[j][1])
+
+print(length)
+print(height)
+
+total = 0
+left_area = 0
+right_area = 0
+center_area = 0
+
+# left_area = 0
+# 기둥 높이 비교하면서 창고 넓이 더해가기
+for k in range(N):
+    if height[k] is max(height):
+        center_area += height[k]
+
+print(center_area)
+
+# 왼쪽 기둥부터 max 기둥전까지
+for l in range(k):
+    if l + 1 == k:
+        break
+
+    if height[l] < height[l+1]:
+        left_area += height[l] * (length[l+1] - length[l])
+
+    # elif height[l] == height[l+1]:
+
+    else:
+        left_area += height[l] * (length[l+1] - length[l])
+        height[l+1] = height[l]
+
+print(left_area)
+
+# 오른쪽 기둥부터 max 기둥전까지 revers idx
+for r in range(N-1, k, -1):
+    if r - 1 == k:
+        break
+
+    if height[r] <= height[r-1]:
+        right_area += height[r] * (length[r-1] - length[r])
+
+    else:
+        height[r-1] = height[r]
+
+print(right_area)
+
+
+total_area = center_area + left_area + right_area
+
+print(total_area)
+print(length)
+print(height)
+
+    # if k + 1 == N:
+    #     break # indexError 방지
+
+    # if height[k] <= height[k+1]:
+    #     left_area += height[k] * (length[k+1] - length[k])
+
+
+
+
+
+# print(length) 위치 순서대로 정렬된 length list
+# for k in range(len(width)):
+#     height.append(width[k][1])
     
-    # 넓이 면적 구하는데에 필요한 기둥에 대한 원소들만 받을 리스트
-    pillars = [width[0],width[-1]]
 
-    # 가장 높은 기둥 찾기
-    for i in range(N):
-        if width[i][1] == max(width[i][1]):
-            pillars.append(width[i])
 
-        # 왼쪽 기둥에서 가장 높은 기둥까지
-        left_pillar = width[0]
-        for j in range(1, i):
-            if width[0][1] <= width[j][1]:
-                pillars.append(width[j])
-
-        # 오른쪽 기둥에서 가장 높은 기둥까지
-        right_pillar = width[-1]
-        for k in range(-1, -i-N):
-            if width[-1][1] <= width[k][1]:
-                pillars.append(width[k])
-
-    # 기둥 위치로 정렬, 최종 면적 값 설정
-    pillars = sorted(pillars)
-    rlt = 0
-    for p in range(len(pillars)):
-        if pillars[p][1] <= pillars[p+1][1]:
-            rlt += pillars[p][1] * (pillars[p+1][0] - pillars[p][0])
-
-        elif pillars[p][1] == max(pillars[p][1]):
-            rlt += pillars[p][1]
-
-        elif max(pillars[p][1]) > pillars[p+1][1]:
-            rlt += pillars[p+1][1] * (pillars[p+1][0] - pillars[p][0])
-
-            if pillars[p] == pillars(len(pillars)):
-                break
-
-    print(rlt)
 
