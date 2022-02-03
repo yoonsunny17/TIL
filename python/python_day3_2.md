@@ -57,7 +57,7 @@ package > module > function
 
 
 
-### LEGB
+### LEGB rule
 
 
 
@@ -65,3 +65,4 @@ package > module > function
 
 
 
+ 

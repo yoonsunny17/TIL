@@ -11,7 +11,7 @@
   * input 값들을 숫자로 바로 활용하고 싶을 때 map 활용
 
     ```python
-    n. m = mapt(int, input().split())
+    n, m = map(int, input().split())
     ```
 
     
@@ -22,9 +22,9 @@
 
 * map(function, iterable)
 
-* filter(function, iterable)
+* filter(function, iterable) : 결과가 True인 것들을 filter object로 반환
 
-* zip(*iterables) : 튜플을 원소로 하는 zip object를 반환
+* zip(*iterables) :  튜플을 원소로 하는 zip object를 반환
 
 * lambda [parameter] : 표현식
 
@@ -53,9 +53,18 @@
         else:
             return n* factorial(n-1)
     factorial(4) #output: 24
+    ==================
+    def fact(n):
+        result = 1
+        while n > 1:
+            result *= n
+            n -= 1
+        return result
     ```
-
+    
     => 반복문으로도 작성 가능하지만, 재귀적 표현이 가장 자연스럽고 간단함
+    
+    => 숫자 커질수록 반복문이 처리속도 훨씬 빠르긴 함
 
 
 

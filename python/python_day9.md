@@ -18,7 +18,7 @@ print(yoonsun.cnt)
 
 * self
   * 모든 method는 self keyword를 가져야 한다
-  * 인스턴 스 자기 자신이다
+  * 인스턴스 자기 자신이다
 
 * instance method (클래스 안에 정의된 함수)
   * 메소드 => 함수
