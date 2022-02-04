@@ -68,7 +68,69 @@
 * ```< a href="https://google.com"></a>``` 
   * *herf = 속성명, " " = 속성값*
   * 쌍따옴표 사용, 공백은 NO!!
-
 * 속성을 통해 태그의 부가적인 정보를 설정 가능
   * ```<a href="https://www.google.co.kr">구글 바로가기</a>```
 * 태그와 상관 없이 사용 가능한 속성(HTML Global Attribute)들도 있음
+
+> **시맨틱 태그** :star: 
+
+* html5에서 *의미론적 요소*를 담은 태그
+  * 기존 영역을 의미하는 div 태그를 대체하여 사용 (div: 하나의 구역을 의미, box라고 생각하면 됨)
+
+* 대표적인 태그 목록
+  * header
+  * nav
+  * article
+  * section
+
+* 시맨틱 태그를 잘 써야 검색엔진최적화(SEO)에서 효과적으로 활용 가능하다
+
+* Non-sementic tag: div, span
+
+
+
+> HTML 문서 구조화
+
+* 인라인 / 블록 요소
+* 텍스트 요소
+  * ```<a></a>```
+  * ```<b></b>```, ```<strong></strong>``` => strong 요소가 좀 더 시맨틱한 의미가 들어감
+  * ```<i></i>```, ```<em></em>``` => em요소가 좀 더 시맨틱한 의미가 들어감
+  * ``<img scr="url">`` 
+
+* 그룹 컨텐츠
+  * ```<pre></pre>``` 공백 문자를 유지하는 데에 유리
+  * ```<p></p>``` 하나의 문단(paragraph), *인라인 요소*만 들어갈 수 있음
+    * div 같은 애는 들어갈 수 없음
+    * div tag 안에 p tag가 들어가는 것은 가능
+
+
+
+> form
+
+* <form\> 기본속성 :star:
+  * **action** : form을 처리할 서버의 URL
+  * **method** : form을 제출할 때 사용할 HTTP 메서드 (GET 혹은 POST)
+  * <form\> 안에 <input\> 을 통해 사용자의 data를 입력받는다
+  * querystring
+
+> input
+
+* post, get
+* form 안에 input을 통해 사용자의 데이터를 입력받는다
+* name= querystring의 key 역할
+* type = 입력받는 형태를 지정 (txt, email ...)
+
+>input label
+
+* label을 클릭하여 input 자체의 초점을 맞추거나 활성화 시킬 수 있음
+  * 사용자가 선택할 수 있는 영역이 늘어나 웹/모바일(터치) 환경에서 편하게 사용 가능
+* input에 id 속성을, label에는 for 속성을 활용하여 상호 연관을 시킴
+  * for, id에 같은 속성을 입력해주어야 둘이 연동 된다는 뜻
+
+> input 유형
+
+* checkbox: 다중 선택 가능
+* radio: 단일 선택만 가능
+
+* [input 속성](
