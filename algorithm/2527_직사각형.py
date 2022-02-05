@@ -1,64 +1,39 @@
-
-# R1, R2는 4개의 요소를 받을 것. [x y p q] 순서대로 받는다
-R1 = [] # [x1, y1, p1, q1]
-R2 = [] # [x2, y2, p2, q2]
-
-# 4줄에 걸쳐 data 받음
 for _ in range(4):
-    n = list(map(int, input().split()))
-    # 4개씩 잘라서 R1, R2 list에 넣기
-    for i in range(8):
-        if 0 <= i <=3:
-            R1.append(n[i]) # [3, 10, 50, 60]
+
+    x1,y1,p1,q1,x2,y2,p2,q2 = map(int, input().split())
+
+    # R1의 가로, 세로길이
+    a1 = p1 - x1
+    b1 = q1 - y1
+
+    # R2의 가로, 세로길이
+    a2 = p2 - x2
+    b2 = q2 - y2
+
+    # R1, R2의 수직, 수평 좌표 거리
+    x_dis = [p2 - x1, p1 - x2]
+    y_dis = [q2 - y1, q1 - y2]    
+
+    for xdis, ydis in x_dis, y_dis:
+        xdis = max(x_dis)
+        ydis = max(y_dis)
+
+    # 점으로 만나는 경우
+        if (xdis == (a1 + a2)) and (ydis == (b1 + b2)):
+            print('c')
+            break
+
+    # 직사각형인 경우
+        if (xdis < (a1 + a2)) and (ydis < (b1 + b2)):
+            print('a')
+            break
+
+    # 선으로 만나는 경우
+        if (xdis == (a1 + a2) and ydis < (b1 + b2)) or (ydis == (b1 + b2) and xdis < (a1 + a2)):
+            print('b')
+            break
+    
+    # 아예 만나지 않는 경우
         else:
-            R2.append(n[i]) # [100, 100, 200, 300]
-
-# 간결하게 쓰기 위해..
-# R1
-x1 = R1[2] - R1[0]
-y1 = R1[3] - R1[1]
-# R2
-x2 = R2[2] - R2[0]
-y2 = R2[3] - R2[1]
-#좌표 거리
-x_distance = abs(R2[2] - R1[0])
-y_distance = abs(R2[3] - R1[1])
-
-# if (x1 + x2 == x_distance) and (y1 + y2 == y_distance):
-#     print("c")
-
-# elif (x1 + x2 == x_distance) or (y1 + y2 == y_distance):
-#     print()
-'''
-4. 점으로 만나는 경우 => c를 출력해라
-경우 3의 1)과 2)를 동시에 만족하면 ok!
-'''
-if (x1 + x2) == x_distance and (y1 + y2) == y_distance:
-    print("c")
-
-'''
-1. 안만나는 경우 => d를 출력해라
-x-axis or y-axis 중 하나라도 (각 변의 길이 합) < (각 직사각형 edge 좌표 거리) 이면 ok!
-=> abs(q2-y1) or abs(p2-x1)
-'''
-if (x1 + x2) < x_distance or (y1 + y2) < y_distance:
-    print("d")
-
-'''
-2. 직사각형인 경우 => a를 출력해라
-안만나는 경우와 정 반대라고 생각하면 된다.
-x, y-axis 모두 (각 변의 길이의 합) > (edge 좌표 거리)를 만족하면 ok!
-
-'''
-if (x1 + x2) > x_distance and (y1 + y2) > y_distance:
-    print("a") 
-'''
-3. 선으로 만나는 경우 => b를 출력해라
-1) x-axis; (edge 좌표 거리) = 각 변의 길이의 합 & y-axis; (각 변의 길이의 합) > (edge 좌표 거리) 이면 ok!
-2) 위와 축만 반대인 경우 
-'''
-(x1 + x2) == x_distance and (y1 + y2) > y_distance
-(x1 + x2) > x_distance and (y1 + y2) == y_distance
-
-
-
+            print('d')
+            break
