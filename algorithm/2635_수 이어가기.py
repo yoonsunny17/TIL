@@ -1,44 +1,32 @@
-# 첫번째 주어지는 수 N <= 30000
-# N = int(input())
-
-# 두번째 주어지는 수의 범위 설정이 중요
-'''
-if N = 100일 때 n < 50 인 경우 빨리 최대 개수가 나오지 않음
-100 30 70 -40 //  100 60 40 20 20 0 20 -20
- '''
-# 즉, 두번째 주어지는 수의 범위는 첫번째 수의 절반보다 커야 함
-# => range(N//2, N)
-
-#일단 무한루프
-# while True:
-#     for numb in range(N//2, N):
-#         if N - numb >= 0:
-
-# numb = []
-# numb_list=[]
-# for N2 in range(N//2, N):
-#     numb.append(N2)
-#     n = N - N2
-#     numb.append(n) # numb = [N2, n]; 세번째 숫자가 numb[1]이 되도록 설정
-
-import numbers
-
-
-cnt_lst=[]
+# 첫번째 수 받기
 N = int(input())
-lst = []
-
-for N2 in range(N//2, N):
-    lst.append(N)
+# 리스트 받는 이차원 리스트 생성
+cnt_lst = []
+for N2 in range(N//2, N+1):
+    lst = [N]
     lst.append(N2)
-    for i in range(2, N//2): #범위 정확 ㄴ
+    # 이미 lst안에 N, N2 있으니까 세번째 수 idx는 2부터 시작
+    for i in range(2, N+1):
+        # 전전에서 전꺼 뺐을 때 양수면 numb에 저장하고 lst에 저장
         if lst[i-2] - lst[i-1] >= 0:
             numb = lst[i-2] - lst[i-1]
             lst.append(numb)
+        # 음수 나오면 numb저장 그만하고 cnt_lst에 저장
         else:
+            cnt_lst.append(lst)
             break
-cnt_lst.append(lst)
-print(cnt_lst)
 
+# cnt_lst에 있는 리스트들의 요소 개수 받는 리스트
+max_numb = []
+for lst in cnt_lst:
+    max_numb.append(len(lst))
+# 최대 요소 개수 출력
+print(max(max_numb))
+
+for i in range(len(cnt_lst)):
+    # 최대 요소 개수와 동일한 cnt_lst의 리스트의 요소를 일렬로 출력
+    if len(cnt_lst[i]) == max(max_numb):
+        for j in cnt_lst[i]:
+            print(j, end=' ')
+            
     
-
