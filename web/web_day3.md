@@ -58,3 +58,23 @@
 
 * main-axis, cross-axis : 어떤 것을 기준으로 정렬하냐에 따라 방법이 매우 다양함 (mdn 참고)
 * flex grow, order.. 
+
+
+
+> **Bootstrap**
+
+* 넷플릭스, SSAFY 도 Bootstrap 기반으로 만들어짐
+* 기존 html에 비해 margin-top이 없어지고, margin-bottom이 줄어듦을 확인할 수 있음
+
+> spacing
+
+* .mt-1 : margin-top{0.25rem} => 4px
+  * m-1부터 m-5까지
+
+* .mx-0 : margin right, left 0px
+* .mx-auto
+* .my-0 : margin top, bottom 0px
+
+* .my-auto
+
+* **t b s e x y** 
