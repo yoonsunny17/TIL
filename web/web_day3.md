@@ -55,3 +55,6 @@
 * align-content
 * align-items
 * align-self : 개별 아이템을 cross axis 기준으로 정렬 => container에 적용하는 것이 아니라 개별 아이템에 적용하는 것!!!
+
+* main-axis, cross-axis : 어떤 것을 기준으로 정렬하냐에 따라 방법이 매우 다양함 (mdn 참고)
+* flex grow, order.. 
