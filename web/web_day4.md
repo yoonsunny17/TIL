@@ -113,9 +113,33 @@
 - `flex-basis` (default가 auto) - Item의 기본 너비 설정 (*얘도 뭐ㅎ*)
   * width를 줄 수 없던 요소들에도 너비를 줄 수 있다는 장점을 가지고 있다
 
+* `align-self` (default가 auto) - cross axis 기준으로 item을 정렬하는 방법을 설정
+  * vs `align-items` : 각각의 item들에 대해 설정해주는 `align-self`가 더 우선순위를 차지한다!!
 
+*********
 
+#### Bootstrap
 
+> How to use?
+
+1. file을 다운받아서 사용
+2. CDN: Content Delivery(Distribution) Network 시스템 사용
+
+> 기본 요소
+
+* **container, rows, column** :star:
+
+  * **12개의 column을 기준으로 동작한다 (12의 약수가 많아서)**:star:
+
+  * **6개의 grid breakpoints**:star:
+
+* container => container/ container-fluid/ container-{BreakingPoint}
+
+  * 세가지의 class 가 있음
+  * container => 안에 있는 item들이 반응형이 됨
+  * container-fluid => width를 항상 100%로 지정해 주는 것
+  * container-{BP} => viewport크기에 도달할 때마다 width가 100%가 되도록 지정해주는 것
+    * BP: xs, sm(스마트폰), md(태블릿), lg(데스크탑), xl, xxl
 
 *****
 
