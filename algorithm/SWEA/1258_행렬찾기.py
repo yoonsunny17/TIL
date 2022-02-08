@@ -47,7 +47,7 @@ def dup(sy, sx, ey, ex):
 T = int(input())
 for test_case in range(1, T+1):
     N = int(input()) 
-    lst = list(list(map(int, input().split())) for _ in range(N)) # 이중리스트 생성
+    lst = [list(map(int, input().split())) for _ in range(N)] # 이중리스트 생성
     rlt = [] # 최종 결과 받을 리스트
 
     for i in range(N):
