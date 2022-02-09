@@ -24,7 +24,7 @@ for test_case in range(1, 11):
                 if cnt != 0: # 가능성 있는 애를 발견했으니 교착하자!!
                     rlt += 1 # 교착 총 개수에 누적
                     cnt = 0 # 다시 가능성 초기화
-                else:
-                    continue # 가능성 없는애 발견했으면 그냥 지나치기..
+                # else:
+                #     continue # 가능성 없는애 발견했으면 그냥 지나치기..
     
     print(f'#{test_case} {rlt}')
