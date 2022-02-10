@@ -1,37 +1,21 @@
-# bubble sort
+# 겹치지 않게 숫자 나열하는 방법
+numb = {1, 2, 3}
 
-# lst = [55, 7, 78, 12, 42]
-#
-# for i in range(len(lst)-1, 0, -1):
-#     for j in range(0, i):
-#         if lst[j] > lst[j+1]:
-#             lst[j], lst[j+1] = lst[j+1], lst[j]
-#
-# print(lst)
+for i1 in range(1, 4):
+    for i2 in range(1, 4):
+        if i2 != i1:
+            for i3 in range(1, 4):
+                if i3 != i2 and i3 != i1:
+                    print(i1, i2, i3)
 
-#######
 
-# SWEA bubble sort solution
+########
 
-def bubble_sort(a, N): # 오름차순
-    for i in range(N-1, 0, -1):
-        for j in range(i):
-            if a[j] > a[j+1]:
-                a[j], a[j+1] = a[j+1], a[j]
+#baby gin game; 완전검색 사용하지 않고!!
 
-    return
+'''
+arr = list(map(int, input().split()))
+arr = list(map(int, input()))
+arr = [int(x) for x in input()]
+'''
 
-T = int(input()) # tc 개수
-for tc in range(1, T+1):
-    N = int(input())
-    arr = list(map(int, input().split()))
-    bubble_sort(arr, N)
-    print(f'#{tc}', end=' ')
-    # for x in arr:
-    #     print(x, end=' ')
-    # print()
-    print(*arr) #=> unpacking!!
-
-##########
-
-# counting sort
