@@ -6,7 +6,6 @@ T = 10
 for tc in range(1, T + 1):
     dump = int(input()) # dump 횟수
     boxes = list(map(int, input().split())) # 각 상자의 높이값
-    cnt = list() # dump 한번 진행할 때마다 최고점과 최저점 차이 값 넣어줄 리스트
 
     # dump 횟수만큼 while 문 돌리기
     while dump != 0:
@@ -41,4 +40,4 @@ for tc in range(1, T + 1):
     # 최고점에서 최저점 빼주기
     rlt = max_box - min_box
 
-    print(f'{tc} {rlt}')
+    print(f'#{tc} {rlt}')
