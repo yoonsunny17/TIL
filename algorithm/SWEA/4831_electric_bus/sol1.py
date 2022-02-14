@@ -1,3 +1,5 @@
+# FAIL SOLUTION #
+
 import sys
 
 sys.stdin = open('electric_bus.txt')
