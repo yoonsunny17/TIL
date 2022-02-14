@@ -68,5 +68,3 @@ total = 25 * 12
 sub = 12 * 5
 rlt = total - sub
 print(rlt)
-
-# 부분집합
