@@ -23,8 +23,8 @@ T = 10
 # 회문의 길이를 반환해주는 함수
 def my_palindrome(arr):
     for i in range(len(arr), -1, -1): # 회문의 길이 100 일때부터 0이 될때까지
-        for j in range(len(arr)):
-            for k in range(len(arr)-i+1):
+        for j in range(len(arr)): # row column idx 구분없이 쓰려고 j, k로 바꿈
+            for k in range(len(arr)-i+1): # 쨌든 회문 길이 빼준만큼 반복 가능하니까,,
                 word = arr[j][k:k+i]
                 if word == word[::-1]: # 회문이라면
                     return i # 회문의 길이를 반환해줘!
