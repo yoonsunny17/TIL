@@ -12,7 +12,18 @@ sys.stdin = open('iron.txt')
 
 T = int(input())
 for tc in range(1, T + 1):
-    lst = list(map(str, input()))
+    lst = list(input())
+    iron = 0 # 쌓여있는 쇠막대기 개수
+    cnt = 0 # 잘린 쇠막대기 개수
+
+    i = 0
+    while True:
+        # 종료조건 설정
+        if i == len(lst):
+            break
+
+    # i = 0
+    # while i < len(lst): # input 개수보다 i가 작은 동안 while문 반복
 
 
     print(f'#{tc} ')
