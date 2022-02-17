@@ -39,6 +39,14 @@ print(a>b) #=> True; b가 a보다 빠르니? yes!!
 print(a<b) #=> False; a가 b보다 빠르니? no!!
 print(a>d) #=> True; d에 대문자가 있니? yes
 print(a<d) #=> False; a에 대문자가 있니? no
+
+'''
+사전에 나와있는 순서대로 비교한다!
+한글도 비교 가능
+'''
+kor_a = '가나다'
+kor_b = '다나가'
+print(kor_a < kor_b) #=> True; '가' 가 '다' 보다 빠르다!
 ```
 
 
