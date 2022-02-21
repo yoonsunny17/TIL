@@ -10,6 +10,8 @@ def mono(number):
         if numb[i] > numb[i + 1]: # 단조증가 하지 않는 경우
             return 0
 
+    return 1 #=> 없으면 none 으로 나올수도..
+
 
 T = int(input())
 for tc in range(1, T + 1):
@@ -18,7 +20,7 @@ for tc in range(1, T + 1):
 
     mono_lst = [] # 단조증가 성립하는 숫자를 받아 줄 리스트
 
-    # N개의 숫자 중 2개 골라서 곱하기
+    # N개의 숫자 중 2개 골라서 곱하기 (combination)
     for i in range(N-1):
         for j in range(i+1, N):
             multi_sum = arr[i] * arr[j]
