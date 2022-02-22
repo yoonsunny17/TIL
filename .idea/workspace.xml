@@ -6,17 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="194e85e6-1b08-4116-8039-7ca0cec9f59e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/1110_더하기싸이클.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/1244_스위치 켜고 끄기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2116_주사위쌓기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2304_창고 다각형.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2309.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2309_일곱난쟁이.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2527_직사각형.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2530_인공지능 시계.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2635_수 이어가기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/2635_수 이어가기_mod.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/SWEA/4831_electric_bus/sol4.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/SWEA/4831_electric_bus/sol4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,28 +47,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Python.sol1 (4)">
-    <configuration name="0222" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TIL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../연습장" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../연습장/0222.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.sol4">
     <configuration name="sol1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,11 +119,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/2005_파스칼의삼각형" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/10158_개미" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/2005_파스칼의삼각형/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/10158_개미/sol2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sol4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/10158_개미" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/10158_개미/sol4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sol4" />
+        <item itemvalue="Python.sol2" />
         <item itemvalue="Python.sol1 (4)" />
         <item itemvalue="Python.sol1 (3)" />
         <item itemvalue="Python.sol1 (1)" />
-        <item itemvalue="Python.sol1" />
-        <item itemvalue="Python.0222" />
       </list>
     </recent_temporary>
   </component>
