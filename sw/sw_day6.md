@@ -108,3 +108,13 @@ def fibo2(n):
     return f[n]
 ```
 
+
+
+> DFS
+
+* 비선형구조인 그래프 구조는 그래프로 표현된 모든 자료를 빠짐없이 검색하는 것이 중요
+* 두 가지 방법
+  * 깊이 우선 탐색 (Depth First Search, DFS)
+  * 너비 우선 탐색 (Breadth First Search, BFS)
+
+* DFS는 **재귀** 또는 **스택**을 사용하여 구현 가능
