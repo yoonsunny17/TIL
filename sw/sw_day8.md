@@ -10,3 +10,23 @@
   * icp가 top에 존재하는 token의 isp보다 더 큰 경우에만 stack에 넣는다!
     * icp > isp => **push**
     * `)` 을 만나면, `(`을 만날 때까지 연산자들을 pop 해준다
+
+
+
+> 백트래킹
+
+* powerset
+* perm
+
+* What is the difference btw DFS and backtracking?
+
+
+
+> Quick sort
+
+* 분할 정복 알고리즘
+  * 분할(divide) + 정복(conquer) + 통합(combine)
+
+* O(nlogn)을 따른다 (quick sort, merge sort 모두 ,,)
+
+* **pivot** => 기준점을 정하자!!!! :star:
