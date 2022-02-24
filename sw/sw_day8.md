@@ -30,3 +30,4 @@
 * O(nlogn)을 따른다 (quick sort, merge sort 모두 ,,)
 
 * **pivot** => 기준점을 정하자!!!! :star:
+* pivot을 꼭 중간으로 정할 필요는 없다
