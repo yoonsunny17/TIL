@@ -35,7 +35,6 @@ def bomb(N, P, arr):
             rlt2 = 0
             c_row = [-1, 1, 1, -1]
             c_col = [1, 1, -1, -1]
-            j = 0
 
             rlt2 += arr[r][c] # 우선 자기 자신을 더해주자
 

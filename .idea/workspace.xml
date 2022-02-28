@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194e85e6-1b08-4116-8039-7ca0cec9f59e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/0228_IM_test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/0228_IM_test/.idea/0228_IM_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/0228_IM_test/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/0228_IM_test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/0228_IM_test/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/IM/IM 기출문제.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/IM/차르봄바/sol1.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/IM/차르봄바/sol1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/IM/차르봄바/sol2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +51,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Python.sol1 (4)">
-    <configuration name="sol1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.sol1">
+    <configuration name="0225" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,11 +64,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/IM/LED조명" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../연습장" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/IM/LED조명/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../연습장/0225.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -70,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,11 +85,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/IM/케이크자르기" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/12712_파리퇴치3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/IM/케이크자르기/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/12712_파리퇴치3/sol1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,11 +106,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/4881_배열최소합" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/2947_나무조각" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/4881_배열최소합/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/2947_나무조각/sol1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol1 (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol1 (5)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,11 +127,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/IM/0221_과목평가/problem_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/3060_욕심쟁이돼지" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/IM/0221_과목평가/problem_2/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/3060_욕심쟁이돼지/sol1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,11 +148,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/IM/0221_과목평가/problem_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/10709_기상캐스터" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/IM/0221_과목평가/problem_1/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/10709_기상캐스터/sol1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sol1 (4)" />
         <item itemvalue="Python.sol1" />
-        <item itemvalue="Python.sol1 (2)" />
+        <item itemvalue="Python.0225" />
         <item itemvalue="Python.sol1 (1)" />
         <item itemvalue="Python.sol1 (3)" />
+        <item itemvalue="Python.sol1 (5)" />
       </list>
     </recent_temporary>
   </component>
