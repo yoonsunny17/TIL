@@ -88,3 +88,25 @@
 ![image-20220303112249330](django_day2.assets/image-20220303112249330.png)
 
 ![image-20220303112322846](django_day2.assets/image-20220303112322846.png)
+
+> Django URLs
+
+* Dispatcher(발송자, 운항 관리자) 로서의 URL
+* 웹 애플리케이션은 URL을 통한 클라이언트의 요청에서부터 시작됨
+
+> Variable Routing
+
+* URL 주소를 변수로 사용하는 것
+* URL의 일부를 변수로 지정하여 view 함수의 인자로 넘길 수 있음
+
+> App URL mapping
+
+* app의 view함수가 많아지면서 사용하는 path() 또한 많아지고, app 또한 더 많이 작성되기 때문에 프로젝트의 urls.py에서 모두 관리하는 것은 비효율적임
+* 따라서 각 app의 urls.py를 작성하여 관리함
+* `include()`
+  * 다른 URLconf(app/urls.py)들을 참조할 수 있도록 도움
+  * 함수 `include()`를 만나게 되면, URL의 그 시점까지 일치하는 부분을 잘라내고, 남은 문자열 부분을 후속 처리 위해 include된 URLconf로 전달
+
+*******
+
+[django official docs](https://docs.djangoproject.com/ko/4.0/intro/tutorial01/)
