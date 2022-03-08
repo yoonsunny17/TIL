@@ -139,6 +139,33 @@
    # save() 가 필요 없다 !!
    ```
 
-   
 
-   
+
+> **Read** 세가지 방법
+
+1. ```python
+   articles = Article.objects.all()
+   ```
+
+2. ```python
+   # 하나의 data가 가지고 있는 특정 조건을 통해 하나의 data를 불러오는 경우
+   article = Article.objects.get(~)
+   ```
+
+3. ```python
+   # 특정 조건을 만족하는 모든 data를 불러오는 경우
+   articles = Article.objects.filter(~)
+
+* ![image-20220308131429506](django_day4.assets/image-20220308131429506.png)
+
+* shell에서 나가고 싶은 경우 `exit()` 
+
+* ![image-20220308131722975](django_day4.assets/image-20220308131722975.png)
+  * requirements.txt에 없는 패키지를 install 한 뒤 requirements에 넣고 싶은 경우
+  * django_extensions가 설치된 것을 확인할 수 있음
+  * **settings.py 의 INSTALLED APPS에 등록해준 뒤 사용**
+
+* ![image-20220308132906508](django_day4.assets/image-20220308132906508.png)
+  * QuerySet => DB로부터 건네받은 객체의 목록
+
+* ![image-20220308133246075](django_day4.assets/image-20220308133246075.png)
