@@ -169,3 +169,28 @@
   * QuerySet => DB로부터 건네받은 객체의 목록
 
 * ![image-20220308133246075](django_day4.assets/image-20220308133246075.png)
+
+* ```python
+  article = Article.objects.get(id=5)  # 다섯번째 항목 가져옴
+  article.title = "다섯번째 글" # 다섯번째 항목의 title을 수정함
+  article.save() # DB에 반영
+  article.delete() # 현재 지정된 article을 삭제함
+  ```
+
+*******
+
+### http method
+
+> GET 방식 
+
+* default값, 서버 리소스를 요청 시 사용 (R)
+* URL => query string 사용
+
+> POST 방식
+
+* 리소스를 생성, 수성, 삭제 시 사용 (C, U, D)
+* BODY 안쪽에 한 번 더 숨겨서 보냄(보안성 증가)
+
+> CRUD (Cross-site request forgery)
+
+* 데이터끼리 정보를 교환 시 token을 함께 교환 (**CSRF token**)
