@@ -69,6 +69,23 @@
 
 * **다만, 글을 작성할 때를 제외하고는 POST 방식을 사용해야 함**
 
+  * request가 GET방식인 경우에는 delete가 안되도록 해야함!!!
+  * if문을 사용해서 POST방식인 경우에만 delete 실행시키기!!
+
+* ```python
+  def delete(request, pk):
+      article = Article.objects.get(id=pk)
+      # request POST 방식인 경우
+      if request.method == 'POST':
+          # 해당 글을 삭제해주기
+          article.delete()
+          # 그 후 index url로 넘어가주자
+          return redirect('articles:index')
+      # GET 방식이라면 삭제 하지 말 것! 그냥 그 페이지에 머무르도록
+      else:
+          return redirect('articles:detail', article.id)
+  ```
+
 * detail.html에서 수정
 
 * ```html
