@@ -84,7 +84,7 @@
 * ![image-20220308103144284](django_day4.assets/image-20220308103144284.png)
 
 * `python manage.py sqlmigrate <appname> <migration number>`
-  * 각각의 sql이 어떻게 적용되었는지를 볼 수 있음
+  * 각각의 sql이 어떻게 적용되었는지를 볼 수 있음 (아래 이미지)
 * ![image-20220308103652023](django_day4.assets/image-20220308103652023.png)
 * 실제로 적용이 되었는지 확인하고 싶은 경우 `showmigrations`
 
