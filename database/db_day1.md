@@ -79,7 +79,95 @@
 > CREATE
 
 * INSERT
+
   * "insert a single row into a table"
   * 특정 테이블에 레코드(행)를 삽입(생성)!
   * `INSERT INTO <table_name> (column1, column2, ...) VALUES (values1, values2, ...)`
-  * 
+
+  ![image-20220314100627086](db_day1.assets/image-20220314100627086.png)
+
+  * 모든 열에 데이터가 있는 경우 column을 명시하지 않아도 됨
+
+  * SQLite는 따로 PK 속성의 컬럼을 작성하지 않으면 값이 자동으로 증가하는 PK옵션을 가진 `rowid` 컬럼을 정의
+
+    `SELECT rowid, * FROM classmates;`
+
+![image-20220314101251049](db_day1.assets/image-20220314101251049.png)
+
+* database은 기본적으로 빈값을 허용하지 않는다
+
+  * `NOT NULL` 속성을 초반에 지정해주어야 함
+  * table 지우고 새로 생성하기
+
+  ![image-20220314101604866](db_day1.assets/image-20220314101604866.png)
+
+  * `PRIMARY KEY`는 무조건 `INTEGER`로 지정해주어야 한다!!!!
+
+* PK를 포함한 table을 새로 생성해준 뒤, ![image-20220314101903891](db_day1.assets/image-20220314101903891.png)
+
+​		이를 다시 run 하면 error 난다; 4개의 속성을 가지도록 작성해줘!
+
+![image-20220314101939725](db_day1.assets/image-20220314101939725.png)
+
+* 근데 매번 id를 써주는 것 너무 불편해...
+  * `INSERT INTO classmates (name, age, address) VALUES ('홍길동', 30, '서울');`
+  * 각 value에 맞는 column들을 명시적으로 작성하면 됨!
+
+![image-20220314102300037](db_day1.assets/image-20220314102300037.png)
+
+![image-20220314102311397](db_day1.assets/image-20220314102311397.png)
+
+* 여러 data를 한번에 넣고 싶은 경우, 아래와 같이 작성하면 됨
+
+![image-20220314102728779](db_day1.assets/image-20220314102728779.png)
+
+![image-20220314102743089](db_day1.assets/image-20220314102743089.png)
+
+
+
+### READ
+
+> SELECT
+
+* SELECT statement :star: (select문)
+
+  * "query data from a table"
+  * 테이블에서 데이터를 조회
+  * SELECT 문은 SQLite에서 가장 복잡한 문이며 다양한 절(clause)와 함께 사용
+    * ORDER BY, DISTINCT, WHERE, LIMIT, GROUP BY ...
+  * SELECT와 함께 사용하는 clause
+    * LIMIT ; OFFSET과 함께 사용되는 경우가 많음
+    * WHERE ; 조건문! IF 문이라고 생각하면 됨
+    * SELECT DISTINCT ; 조회 결과에서 중복 행을 제거
+
+* `SELECT column1, column2, ... FROM tablename;`
+
+  ![image-20220314103808450](db_day1.assets/image-20220314103808450.png)
+
+![image-20220314103823263](db_day1.assets/image-20220314103823263.png)
+
+* `SELECT column1, column2, ... FROM tablename LIMIT 숫자;`
+
+![image-20220314103933653](db_day1.assets/image-20220314103933653.png)![image-20220314103944910](db_day1.assets/image-20220314103944910.png)
+
+
+
+* `SELECT column1, column2, ... FROM tablename LIMIT 숫자 OFFSET 숫자;`
+
+  ![image-20220314104126869](db_day1.assets/image-20220314104126869.png)	![image-20220314104142572](db_day1.assets/image-20220314104142572.png)
+
+> WHERE
+
+* `SELECT column1, column2, ... FROM tablename WHERE 조건;`
+
+  ![image-20220314104427903](db_day1.assets/image-20220314104427903.png)![image-20220314104439632](db_day1.assets/image-20220314104439632.png)
+
+* `SELECT DISTINCT column FROM tablename;`
+
+  * 특정 컬럼을 중복값 없이 가져오기 (실습에서 4가지의 age pool을 가지고 있음을 확인!)
+
+  ![image-20220314104610613](db_day1.assets/image-20220314104610613.png)![image-20220314104627120](db_day1.assets/image-20220314104627120.png)
+
+* `SELECT column1, column2, ... FROM tablename;`
+
+> READ
