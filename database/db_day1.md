@@ -47,9 +47,9 @@
 
 * DML (Data Manipulation Language)
 
-> 
 
 
+> 실습을 진행해보자 !
 
 ![image-20220314093907642](db_day1.assets/image-20220314093907642.png)
 
@@ -71,8 +71,8 @@
 
 
 
-* `CREATE TABLE`
-* `DROP TABLE`
+* `CREATE TABLE` : 표 생성
+* `DROP TABLE` : 표 삭제
 
 
 
@@ -119,9 +119,9 @@
 
 * 여러 data를 한번에 넣고 싶은 경우, 아래와 같이 작성하면 됨
 
-![image-20220314102728779](db_day1.assets/image-20220314102728779.png)
+![image-20220314102728779](db_day1.assets/image-20220314102728779.png)![image-20220314102743089](db_day1.assets/image-20220314102743089.png)
 
-![image-20220314102743089](db_day1.assets/image-20220314102743089.png)
+
 
 
 
@@ -142,9 +142,7 @@
 
 * `SELECT column1, column2, ... FROM tablename;`
 
-  ![image-20220314103808450](db_day1.assets/image-20220314103808450.png)
-
-![image-20220314103823263](db_day1.assets/image-20220314103823263.png)
+  ![image-20220314103808450](db_day1.assets/image-20220314103808450.png)![image-20220314103823263](db_day1.assets/image-20220314103823263.png)
 
 * `SELECT column1, column2, ... FROM tablename LIMIT 숫자;`
 
@@ -155,6 +153,10 @@
 * `SELECT column1, column2, ... FROM tablename LIMIT 숫자 OFFSET 숫자;`
 
   ![image-20220314104126869](db_day1.assets/image-20220314104126869.png)	![image-20220314104142572](db_day1.assets/image-20220314104142572.png)
+
+  * OFFSET
+    * 동일 오브젝트 안에서 오브젝트 처음부터 주어진 요소나 지점까지의 변위차(위치 변화량)을 나타내는 정수형
+    * 0부터 시작함 (list의 idx와 동일하게 생각하면 될 듯!)
 
 > WHERE
 
@@ -178,15 +180,17 @@
 
 * ![image-20220314110941090](db_day1.assets/image-20220314110941090.png)![image-20220314110956302](db_day1.assets/image-20220314110956302.png)
 
-* SQLite는 이미 사용되었던 id 값을 재활용한다!!!!
+* SQLite는 이미 사용되었던 id 값을 **재활용**한다!!!!
 
 * 이를 방지하기 위해 테이블 생성 단계에서 `AUTOINCREMENT` 속성을 사용해야 함
 
   `CREATE TABLE tablename ( id INTEGER PRIMARY KEY AUTOINCREMENT, ... )`
 
+  * django에서는 기본값으로 사용되는 설정
+
 > UPDATE
 
-* SET clause 에서 테이블의 각 열에 대해 새로운 값을 설정
+* **SET clause** 에서 테이블의 각 열에 대해 새로운 값을 설정
 
 * `UPDATE tablename SET column1=value1, column2=value2, ... WHERE 조건;`
 
