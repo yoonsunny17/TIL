@@ -183,3 +183,16 @@
 * 이를 방지하기 위해 테이블 생성 단계에서 `AUTOINCREMENT` 속성을 사용해야 함
 
   `CREATE TABLE tablename ( id INTEGER PRIMARY KEY AUTOINCREMENT, ... )`
+
+> UPDATE
+
+* SET clause 에서 테이블의 각 열에 대해 새로운 값을 설정
+
+* `UPDATE tablename SET column1=value1, column2=value2, ... WHERE 조건;`
+
+  * 중복 불가능한 값인 rowid에 접근하여 수정하자!
+
+  ![image-20220314112536423](db_day1.assets/image-20220314112536423.png)![image-20220314112546534](db_day1.assets/image-20220314112546534.png)
+
+
+
