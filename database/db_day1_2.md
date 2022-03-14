@@ -94,3 +94,55 @@
   ![image-20220314150442478](db_day1_2.assets/image-20220314150442478.png)
 
   * 처음 ORDER BY에 온 조건 기준으로 정렬을 해준 뒤, 그 다음에 오는 조건으로 정렬을 해준다
+
+> GROUP BY clause
+
+* GROUP BY
+  * 행 집합에서 요약 행 집합을 만듦
+  * SELECT 문의 optional 절
+  * **문장에 WHERE절이 포함된 경우 반드시 WHERE 절 뒤에 작성해야 함**
+
+* `SELECT column1, aggregate_fumction(column2) FROM table GROUP BY column1, column2;`
+
+* 각 성(last name)씨가 몇 명씩 있는지 조회한다면?
+
+  ![image-20220314151547517](db_day1_2.assets/image-20220314151547517.png)![image-20220314151652410](db_day1_2.assets/image-20220314151652410.png)
+
+  * 단, 출력되는 결과 header의 이름을 따로 지정해주지 않는 경우 위와 같이 나옴
+  * 이름을 지정하고 싶은 경우에는 `AS`를 활용해준다
+
+  ![image-20220314151814884](db_day1_2.assets/image-20220314151814884.png)![image-20220314151832449](db_day1_2.assets/image-20220314151832449.png)
+
+> ALTER TABLE
+
+* 4가지 기능 (4번은 3.35ver 이후에 추가됨!!)
+
+  1. table 이름 변경 ![image-20220314152635416](db_day1_2.assets/image-20220314152635416.png)
+
+  2. 테이블에 새로운 column 추가![image-20220314152840263](db_day1_2.assets/image-20220314152840263.png)
+
+     * **ERROR** 발생! NOT NULL이라면서 빈 값을 주면 어떡해 :cry:
+
+       ![image-20220314152925292](db_day1_2.assets/image-20220314152925292.png)
+
+     * NOT NULL 설정 없이 추가하기
+
+       `ALTER TABLE news ADD COLUMN created_at TEXT;`
+
+       ![image-20220314153148712](db_day1_2.assets/image-20220314153148712.png)
+
+       그 다음 값 넣어주기
+
+       `INSERT INTO news VALUES ('제목', '내용', datetime('now'));`
+
+       ![image-20220314153357751](db_day1_2.assets/image-20220314153357751.png)
+
+     * NOT NULL 설정 유지한 채로 추가하기 => DEFAULT값 설정해줘야 함!!
+
+       ![image-20220314153552871](db_day1_2.assets/image-20220314153552871.png)
+
+       ![image-20220314153613004](db_day1_2.assets/image-20220314153613004.png)
+
+  3. column 이름 수정![image-20220314153730431](db_day1_2.assets/image-20220314153730431.png)
+
+  4. drop column![image-20220314154216370](db_day1_2.assets/image-20220314154216370.png)
