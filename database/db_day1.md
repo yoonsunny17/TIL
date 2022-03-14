@@ -170,4 +170,16 @@
 
 * `SELECT column1, column2, ... FROM tablename;`
 
-> READ
+> DELETE
+
+* `DELETE FROM tablename WHERE 조건;` 조건을 통해 특정 레코드 삭제하기
+
+  ![image-20220314110731281](db_day1.assets/image-20220314110731281.png)![image-20220314110740980](db_day1.assets/image-20220314110740980.png)
+
+* ![image-20220314110941090](db_day1.assets/image-20220314110941090.png)![image-20220314110956302](db_day1.assets/image-20220314110956302.png)
+
+* SQLite는 이미 사용되었던 id 값을 재활용한다!!!!
+
+* 이를 방지하기 위해 테이블 생성 단계에서 `AUTOINCREMENT` 속성을 사용해야 함
+
+  `CREATE TABLE tablename ( id INTEGER PRIMARY KEY AUTOINCREMENT, ... )`
