@@ -38,6 +38,7 @@ def bfs(row, col, run):
                     if matrix[rr][cc] != 0:
                         visited[rr][cc] = 1
                         q.append([rr, cc])
+
         # 3 x
         if matrix[r][c] == 2:
             dr = [-1, 1]
@@ -49,6 +50,7 @@ def bfs(row, col, run):
                     # if matrix[rr][cc] != 0 and matrix[rr][cc] != 3:
                     visited[rr][cc] = 1
                     q.append([rr, cc])
+
         # 2 x
         if matrix[r][c] == 3:
             dr = [0, 0]
@@ -60,6 +62,7 @@ def bfs(row, col, run):
                     # if matrix[rr][cc] != 0 and matrix[rr][cc] != 2:
                     visited[rr][cc] = 1
                     q.append([rr, cc])
+
         # 4 x
         if matrix[r][c] == 4:
             dr = [-1, 0]
@@ -71,6 +74,7 @@ def bfs(row, col, run):
                     # if matrix[rr][cc] != 0 and matrix[rr][cc] != 4:
                     visited[rr][cc] = 1
                     q.append([rr, cc])
+
         # 5 x
         if matrix[r][c] == 5:
             dr = [1, 0]
@@ -83,6 +87,7 @@ def bfs(row, col, run):
                     visited[rr][cc] = 1
                     q.append([rr, cc])
 
+
         if matrix[r][c] == 6:
             dr = [1, 0]
             dc = [0, -1]
@@ -94,6 +99,7 @@ def bfs(row, col, run):
                     visited[rr][cc] = 1
                     q.append([rr, cc])
 
+
         if matrix[r][c] == 7:
             dr = [-1, 0]
             dc = [0, -1]
@@ -104,6 +110,7 @@ def bfs(row, col, run):
                     # if matrix[rr][cc] != 0:
                     visited[rr][cc] = 1
                     q.append([rr, cc])
+
 
     return sum(sum(visited, []))
     # return visited, time, matrix[row][col]
