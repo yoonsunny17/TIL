@@ -35,10 +35,12 @@ for tc in range(1, T + 1):
 
         while turn:
             # 순서대로 돌을 놓을거야
-            r, c, color = turn.popleft()
+            start = turn.popleft()
+            r = start[0]
+            c = start[1]
             # 만약 검은 돌인 경우, 보드의 해당 위치에 검은 돌을 놓자
-            if color == 1:
-                board[r][c] = 1
+            if start[-1] == 1:
+                board[start[0]][start[1]] = 1
                 # 두고 난 다음에, 이 돌의 주변을 탐색해보자
                 for i in range(8):
                     rr = r + dr[i]
@@ -53,11 +55,10 @@ for tc in range(1, T + 1):
                             # 바꾸다가 검은 돌을 만나는 경우 그만 바꿔
                             if board[r][c]:
                                 break
-
             # 흰 돌이라면, 해당 위치에 흰 돌을 놓자
-            if color == 2:
-                board[r][c] = 2
-                # 두고 난 다음에, 주변을 탐색해보자
+            if start[-1] == 2:
+                board[start[0]][start[1]] = 2
+                # 두고 난 다음에, 이 돌의 주변을 탐색해보자
                 for i in range(8):
                     rr = r + dr[i]
                     cc = c + dc[i]
@@ -79,26 +80,4 @@ for tc in range(1, T + 1):
         return board
 
     game()
-
-
-
-
-    # case1. N = 4
-
-    # case2. N = 6
-
-    # case3. N = 8
-
-    # 흑돌 = 1, 백돌 = 2
-    # pprint(turn)
-    # pprint(board)
-
-    print(f'#{tc} ')
-
-# 단, 흰 돌 사이에 있는 검은 돌만 바꿔야 해
-# while True:
-#     rr = r + dr[i]
-#     cc = c + dc[i]
-#     if board[r][c] == 2:
-#         break
-#     board[rr][cc] = 2
+    pprint(board)
