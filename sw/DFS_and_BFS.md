@@ -87,3 +87,24 @@ print(b) # ['A', 'B', 'C', 'D', 'G', 'H', 'I', 'E', 'F', 'J']
 **다 똑같은데, while문에서 DFS는 `node = stack.pop()`를, BFS는 `node = stack.popleft()`를 사용한다**
 
 즉, DFS는 stack을 사용하고, BFS는 queue를 사용한다!!!!
+
+
+
+--------
+
+## 연결 요소 (connected component)
+
+(BOJ #11724_연결 요소의 개수)
+
+**나누어진 각각의 그래프**
+
+* 그래프는 여러 개의 isolated subgraphs(고립된 부분 그래프) 로 구성될 수 있음
+* 각각의 isolated subgraph를 **연결 요소** 라고 한다
+
+
+
+> 연결 요소의 특징
+
+* 연결 요소에 속한 모든 정점을 연결하는 경로가 있어야 한다
+* 서로 다른 연결 요소에 속한 정점끼리 연결하는 경로가 있으면 안된다
+* 연결 요소를 찾는 방법은 **DFS 또는 BFS 탐색**을 이용하면 된다
