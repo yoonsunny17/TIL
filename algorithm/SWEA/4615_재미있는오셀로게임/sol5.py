@@ -21,7 +21,7 @@ for tc in range(1, T + 1):
     dc = [0, 0, -1, 1, 1, 1, -1, -1]
     print('======start======')
     pprint(board)
-    print('======start======')
+    print('======end======')
     while turn:
         # 위치 및 돌의 색깔 순서대로 꺼내오기
         r, c, color = turn.popleft()
@@ -56,9 +56,9 @@ for tc in range(1, T + 1):
                 board[i][j] = color
 
         ## 바뀌는거 확인 ##
-        print('======start======')
-        pprint(board)
-        print('======start======')
+        # print('======start======')
+        # pprint(board)
+        # print('======start======')
 
     # 최종적으로 각 돌의 개수를 세어주자
     black = white = 0
