@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="194e85e6-1b08-4116-8039-7ca0cec9f59e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sw/DFS_and_BFS.md" beforeDir="false" afterPath="$PROJECT_DIR$/sw/DFS_and_BFS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/11724_연결요소의개수/sol1.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baekjoon/11724_연결요소의개수/sol1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/SWEA/2382_미생물격리/sol2.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/SWEA/2382_미생물격리/sol2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/SWEA/4615_재미있는오셀로게임/sol5.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/SWEA/4615_재미있는오셀로게임/sol5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,28 +52,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/ssafy7/webex-student/APS_algorithm/0318_문제풀이 2차" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Python.sol2">
-    <configuration name="grass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TIL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../grass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.sol5">
     <configuration name="sol1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,11 +61,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/11724_연결요소의개수" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/15654_N과M5" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/11724_연결요소의개수/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/15654_N과M5/sol1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sol1 (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/15656_N과M7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/15656_N과M7/sol1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,32 +103,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/2382_미생물격리" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/15655_N과M6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/2382_미생물격리/sol1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sol2 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TIL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/1486_장훈이의높은선반" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/1486_장훈이의높은선반/sol2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/15655_N과M6/sol1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,11 +124,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/2382_미생물격리" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/14888_연산자끼워넣기" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/2382_미생물격리/sol2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/14888_연산자끼워넣기/sol2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sol5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/4615_재미있는오셀로게임" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/4615_재미있는오셀로게임/sol5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sol2" />
+        <item itemvalue="Python.sol5" />
+        <item itemvalue="Python.sol1 (3)" />
         <item itemvalue="Python.sol1" />
         <item itemvalue="Python.sol1 (1)" />
-        <item itemvalue="Python.grass" />
-        <item itemvalue="Python.sol2 (2)" />
+        <item itemvalue="Python.sol2" />
       </list>
     </recent_temporary>
   </component>
