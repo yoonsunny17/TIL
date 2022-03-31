@@ -1,8 +1,7 @@
-
 def tree(r, c, N):
     # 쿼드트리 탐색 출발 지점 설정해주기
     start = matrix[r][c]
-
+    # 해당되는 범위 싹 다 돌거야
     for i in range(r, r+N):
         for j in range(c, c+N):
             if matrix[i][j] != start:  # 만약 start 지점과 같은 숫자가 아니면,
