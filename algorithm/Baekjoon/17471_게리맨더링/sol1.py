@@ -33,9 +33,14 @@ def dfs(elem1):
     visited = [0] * (N+1)
 
     while stack:
-        vertex = stack.pop()
+        vertex = stack.pop()  # elem1 = (1, 2, 3)
         for v in vertex:
-            if v in graph[v]:
+
+
+    # while stack:
+    #     vertex = stack.pop()
+    #     for v in vertex:
+    #         if v in graph[v]:
 
 # 연결 안되어있으면 break
 # 최솟값보다 큰 경우 break
