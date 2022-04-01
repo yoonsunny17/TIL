@@ -26,7 +26,6 @@ def bfs(x, y, grow):
                 # 그리고 그 위치의 물고기 크기가 상어의 크기보다 작거나 같은 경우라면, 지나갈 수 있어
                 if matrix[rr][cc] <= grow:
                     q.append([rr, cc])
-                    # visited[rr][cc] = visited[r][c] + 1
                     visited[rr][cc] = 1
                     distance[rr][cc] = distance[r][c] + 1
                     # 근데 물고기를 먹을 수 있는 경우는 상어보다 작은 크기인 경우만 가능해
