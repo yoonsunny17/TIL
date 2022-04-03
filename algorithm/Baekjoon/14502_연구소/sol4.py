@@ -68,11 +68,3 @@ dc = [0, 0, -1, 1]
 
 change_walls(0)
 print(max_rlt)
-
-
-
-
-
-
-
-

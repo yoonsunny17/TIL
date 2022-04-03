@@ -13,6 +13,7 @@ for i in range(N):
         if matrix[i][j] == 1:
             q.append([i, j])
 
+
 def bfs():
     # queue가 빌 때까지
     while q:

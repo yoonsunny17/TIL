@@ -1,6 +1,7 @@
 import sys
 sys.setrecursionlimit(10**6)
 
+
 def dfs(v):
     # 방문기록을 남겨주자
     visited[v] = 1
@@ -14,6 +15,7 @@ def dfs(v):
 
 
 N, M = map(int, input().split())
+# 인접행렬 만들기
 graph = [[] for _ in range(N+1)]
 for _ in range(M):
     u, v = map(int, sys.stdin.readline().split())
