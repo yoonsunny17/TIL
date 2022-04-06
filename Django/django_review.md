@@ -95,3 +95,55 @@
 * 하위 템플릿이 재정의(override) 할 수 있는 블록을 정의하는 기본 skeleton template을 만들 수 있음
 
 `{% extends '<base.html>'%}` & `{% block content %} {% endblock content %}`
+
+****************
+
+## Django Model (review)
+
+> Model
+
+* 단일 데이터에 대한 정보를 가짐
+
+> Database
+
+* 체계화된 데이터의 모임
+* 쿼리(Query)
+  * 데이터를 조회하기 위한 명령어
+  * 조건에 맞는 데이터를 추출하거나 조작하는 명령어
+  * query를 날린다 = data를 보낸다
+* 기본 구조
+  * 스키마(schema)
+  * 테이블(table)
+
+> ORM
+
+* Object-Relational-Mapping (객체 지향 매핑)
+* 장점
+  * SQL을 잘 알지 못해도 DB 조작이 가능함
+  * 생산성이 좋음
+
+
+
+## Migrations
+
+> Migrations Commands
+
+1. `python manage.py makemigrations`
+
+2. `migrate`
+
+3. `sqlmigrate`
+4. `showmigrations`
+
+
+
+## CRUD
+
+> Create
+
+1. 인스턴스 생성 후 인스턴스 변수 설정
+
+2. 초기 값과 함께 인스턴스 생성
+3. QuerySet API - creat() 사용; save 과정이 포함되어 있음
+   * `save() method`
+   * 객체를 데이터베이스에 저장함
