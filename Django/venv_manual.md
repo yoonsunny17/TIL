@@ -5,7 +5,7 @@
 
 4. 가상환경 실행 ( source venv/Scripts/activate )
 
-5. 장고 설치 ( pip install djagno==3.2.12)
+5. 장고 설치 ( pip install djagno==3.2.12)// 여러가지를 한꺼번에 다운받고 싶은 경우 (pip install -r requirement.txt)
 
 6. 프로젝트설치 ( django-admin startproject <projectname> **.**) 
 

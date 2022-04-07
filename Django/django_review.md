@@ -147,3 +147,5 @@
 3. QuerySet API - creat() 사용; save 과정이 포함되어 있음
    * `save() method`
    * 객체를 데이터베이스에 저장함
+
+* redirect
