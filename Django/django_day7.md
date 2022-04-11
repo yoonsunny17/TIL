@@ -1,4 +1,4 @@
-# Authentication system
+# Authentication system 1
 
 > 인증 권한 필수 시스템
 
@@ -194,4 +194,37 @@ def login(request):
 
 * `login_required` decorator
   * 사용자가 로그인되어있지 않으면, `settings.LOGIN_URL`에 설정된 문자열 기반 절대 경로로 redirect함
+
+
+
+> "next" query string parameter
+
+* 로그인이 정상적으로 진행되면 기존에 요청했던 주소로 redirect 하기 위해 마치 주소를 keep해주는 것
+* 단, 별도로 처리해주지 않으면 우리가 view에 설정한 redirect 경로로 이동하게 됨
+
+
+
+*******
+
+
+
+# Authentication system 2
+
+> 회원가입
+
+* CRUD의 CREATE와 비슷함
+
+* UserCreationForm
+  * 주어진 username과 password로 권한이 없는 새  user를 생성하는 ModelForm
+
+* 3개의 필드를 가짐
+  1. username (from the user model)
+  2. password1
+  3. password2
+
+* views.py에서 사용 시 `from django.contrib.auth.forms import UserCreationForm` 로 라이브러리에서 불러와서 사용해준다
+
+> 회원탈퇴
+
+* CRUD의 DELETE와 비슷함
 
