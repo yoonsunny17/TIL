@@ -45,3 +45,27 @@ def find_parent(parent, x):
     return parent[x]
 ```
 
+* 노드의 개수 V개, 최대 V-1개의 union 연산과 M개의 find 연산을 수행할 때 시간복잡도
+
+![image-20220413105409219](union-find.assets/image-20220413105409219.png)
+
+> 사이클 판별법
+
+* union-find 알고리즘을 이용해서 **무방향 그래프 내에서 사이클을 판별**할 수 있다
+  1. 각 간선을 확인하면서 두 노드의 루트노드를 확인한다
+     * 루트 노드가 서로 **다르면** union 연산 수행
+     * 루트 노드가 서로 **같으면** cycle 발생
+  2. 모든 간선에 대해 1번 반복
+
+```python
+for i in range(e):
+    a, b = map(int, input().split())
+    # 사이클이 발생한 경우 종료
+    if find_parent(parent, a) == find_parent(parent, b):
+        cycle = True
+        break
+    # 사이클이 발생하지 않았다면 합집합(union) 연산 수행
+    else:
+        union_parent(parent, a, b)
+```
+
