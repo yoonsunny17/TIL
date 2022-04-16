@@ -1,9 +1,29 @@
 N = int(input())
 numbs = list(map(int, input().split()))
+numbs.sort()
 x = int(input())
+start = 0
+end = N - 1
+interval_cnt = 0  # 중간 합계 계산할 변수 초기화
+cnt = 0  # x 만족하는 쌍 몇 개 있는지 세어줄 변수 초기화
 
-cnt = 0
+# start와 end가 같은 숫자를 가리킬 때까지 반복할거야
+while start < end:
+    interval_cnt = numbs[start] + numbs[end]
+    # 현재 구간 합이 목표 합보다 작다면, start를 밀어
+    if interval_cnt < x:
+        start += 1
 
+    # 현재 구간 합이 목표 합보다 크다면, end를 땡겨
+    elif interval_cnt > x:
+        end -= 1
+
+    # 현재 구간 합이 목표 합과 일치한다면, cnt +1 해줘
+    else:
+        cnt += 1
+        start += 1
+
+print(cnt)
 '''
 BOJ 3273
 case 1. 두 수의 합
