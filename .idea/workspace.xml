@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194e85e6-1b08-4116-8039-7ca0cec9f59e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithm/Baekjoon/1806_부분합/sol2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/Baekjoon/2252_줄세우기/sol2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/1644_소수의연속합/sol1.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baekjoon/1644_소수의연속합/sol1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Baekjoon/1806_부분합/sol1.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baekjoon/1806_부분합/sol1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sw/two_pointer.md" beforeDir="false" afterPath="$PROJECT_DIR$/sw/two_pointer.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
