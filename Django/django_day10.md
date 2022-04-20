@@ -9,8 +9,8 @@
   * 요청 (request)
   * 응답 (response)
 * 기본 특성
-  * Stateless
-  * Connectionless
+  * Stateless (상태를 기억하지 않음)
+  * Connectionless (연결을 지속하지 않는다)
 * 쿠키와 세션을 통해 서버 상태를 요청과 연결하도록 함
 * HTTP 메세지
 
@@ -30,8 +30,10 @@
   1. Informational responses (1xx)
   2. Successful responses (2xx)
   3. Redirection messages (3xx)
-  4. Client error responses (4xx)
+  4. Client **error** responses (4xx)
+     * 내가(요청하는 사람이) 잘못했어...!
   5. Server error responses (5xx)
+     * back-end 잘못이야!!!
 
 **웹에서의 리소스 식별**
 
@@ -61,7 +63,7 @@
     * URL, URN
 * URI는 크게 URL, URN으로 나눌 수 있지만, URN을 사용하는 비중은 매우 적으므로 일반적으로 URL은 URI와 같은 의미처럼 사용하기도 함
 
-**URI의 구조**
+**URI의 구조**:star:
 
 * Scheme
   * 브라우저가 사용해야 하는 프로토콜
@@ -105,7 +107,7 @@
   * 웹 어플리케이션 개발에서 다른 서비스에 요청을 보내고 응답을 받기 위해 정의된 명세
   * 현재 웹 개발은 모든 것을 직접 개발하기보다 여러 Open API를 활용하는 추세
 * 응답 데이터 타입
-  * HTML, XML, JSON
+  * HTML, XML, JSON (요즘은 거의 대부분 JSON을 사용한다..)
 * 대표적인 API 서비스 목록
   * Youtube API, Naver Papago API, Kakao Map API ...
 
@@ -168,7 +170,40 @@
 * Serializers in Django
   * Queryset 및 Model Instance와 같은 복잡한 데이터를 JSON, XML 등의 유형으로 쉽게 변환할 수 있는 Python data type으로 만들어줌
 
-**Django REST Framework**
+**Django REST Framework (DRF)**
 
 * Django REST framework(DRF) 라이브러리를 사용한 JSON 응답
 * `pip install djangorstframework` & `INSTALLED_APPS = ['rest_framework',]` 등록
+
+**Single Model**
+
+* DRF with Single Model
+  * 단일 모델의 data를 직렬화(serialization)하여 JSON으로 변환하는 방법에 대한 학습
+  * 단일 모델을 두고 CRUD 로직을 수행 가능하도록 설계
+  * API 개발을 위한 핵심 기능을 제공하는 도구 활용
+    * DRF built-in form
+    * Postman (*요청과 응답을 브라우저를 대체하여 확인해볼 수 있음!*)
+      * API 구축 및 사용을 위해 여러 도구를 제공하는 API 플랫폼
+
+* `ModelSerializer`
+  * 모델 필드에 해당하는 필드가 있는 Serializer 클래스를 자동으로 만들 수 있는 shortcut
+  * 아래 핵심 기능을 제공
+    * 모델 정보에 맞춰 자동으로 필드 생성
+    * serializer에 대한 유효성 검사기를 자동으로 생성
+    * `.create() & .update()`의 간단한 기본 구현이 포함됨
+  * Model의 필드를 어떻게 **직렬화**할 지 설정하는 것이 핵심
+  * 이 과정은 Django에서 Model의 필드를 설정하는 것과 동일함
+
+* `many` argument
+  * `many=True`
+    * "Serializing multiple objects"
+    * 단일 인스턴스 대신 QuerySet 등을 직렬화하기 위해서는 serializer를 인스턴스화 할 때 `many=True`를 키워드 인자로 전달해야 함
+* Build RESTful API
+
+![image-20220420174200001](django_day10.assets/image-20220420174200001.png)
+
+* GET
+  * `api_view` decorator
+    * 기본적으로 GET 메서드만 허용되며 다른 메서드 요청에 대해서는 405 Method Not Allowed로 응답
+    * view 함수가 응답해야 하는 HTTP 메서드의 목록을 리스트의 인자로 받음
+    * DRF에서는 선택이 아닌 **필수적으로 작성**해야 해당 view 함수가 정상적으로 동작함
