@@ -4,7 +4,7 @@
 
 **JavaScript의 필요성**
 
-* 브라우저 화면을 동적으로 만들기 위함
+* 브라우저 화면을 **동적**으로 만들기 위함
 * 브라우저를 조작할 수 있는 **유일한 언어**
 
 **브라우저에서 할 수 있는 일**
@@ -15,16 +15,27 @@
     * 파싱 (Parsing)
       * 구문 분석, 해석
       * 브라우저가 문자열을 해석하여 DOM Tree로 만드는 과정
+      * 브라우저마다 탑재된 엔진이 다르므로 속도가 다름
+        * chrome 엔진 = V8
 * BOM(Browser Object Model) 조작
   * navigator, screen, location, frames, history, XHR
   * 자바스크립트가 브라우저와 소통하기 위한 모델
+  * 실제로는 잘 사용하지 않음 ㅎ
 * JavaScript Core(ECMAScript)
   * Data Structure(Object, Array), Conditional Expression, Iteration
   * 브라우저(BOM & DOM)을 조작하기 위한 명령어 약속(언어)
 
 
 
-> 브라우저(BOM) 과 그 내부의 문서(DOM)를 조작하기 위해 ECMAScrip(JS)를 학습
+> 브라우저(BOM) 과 그 내부의 문서(DOM)를 조작하기 위해 ECMAScript(JS)를 학습
+
+
+
+**코딩 스타일 가이드**
+
+* airbnb javascript style guide
+* google javascript style guide
+* etc ...
 
 
 
@@ -57,6 +68,16 @@
   * 재할당 할 예정이 없는 변수 선언 시 사용
   * 변수 재선언 불가능
   * 블록 스코프
+
+```javascript
+let name = 'yoonsun'
+const age = 27
+
+console.log(`${name}님의 나이는 ${age}살 입니다.`);
+```
+
+![image-20220426094308922](javascript_day1.assets/image-20220426094308922.png)
+
 * var (*사용하지 않음*)
   * var로 선언한 변수는 재선언 및 재할당 모두 가능
   * ES6 이전에 변수를 선언할 때 사용되던 키워드
@@ -90,7 +111,7 @@
 **데이터 타입 종류**
 
 * 자바스크립트의 모든 값은 특정한 데이터 타입을 가짐
-* 크게 원시 타입(primitive type)과 참조 타입(reference type)으로 분류됨
+* 크게 **원시 타입(primitive type)**과 **참조 타입(reference type)**으로 분류됨
   * 원시타입
     * 객체(object)가 아닌 기본 타입
     * 변수에 해당 타입의 값이 담김
@@ -99,6 +120,7 @@
     * 객체(object) 타입의 자료형
     * 변수에 해당 객체의 참조 값이 담김
     * 다른 변수에 복사할 때 참조 값이 복사됨
+    * *함수도 하나의 data type이다!*
 
 ![image-20220425202502428](javascript_day1.assets/image-20220425202502428.png)
 
@@ -125,22 +147,57 @@
 
 * 할당 연산자
   * 오른쪽 피연산자의 평가 결과를 왼쪽 피연산자에 할당하는 연산자
+  * `=, ==, ===` 존재
+  * `=, ===` 이거 두가지 사용하시오..
+* 논리 연산자
+  * and
+  * or
+  * not
 
-* `=, ==, ===` 존재
-* `=, ===` 이거 두가지 사용하시오..
+* **삼항 연산자** (JS에서는 굉!!장히 많이 사용 :star:)
+  * `if else` 사용할 때 삼항연산자 많이 쓸수록 이쁜 코드
+
 
 **반복문**
 
 * `while`
+
+```javascript
+let i = 1
+
+while (i < 11) {
+  console.log(i);
+  i += 1
+}
+```
+
 * `for`
+
+```javascript
+// for (초기화; 조건; 표현식) {
+	// do something ~~
+// }
+```
+
+```javascript
+for (let i = 1; i < 11; i += 1) {
+  console.log(i);
+}
+```
+
 * `for ... in`
   * 주로 객체(object)의 속성들을 순회할 때 사용
   * 배열도 순회 가능하지만 인덱스 순으로 순회한다는 보장이 없으므로 권장하지 않음
+
 * `for ... of`
   * **반복 가능한(iterable) 객체를 순회**하며 값을 꺼낼 때 사용
     * 반복 가능한 객체 = `array, map, set, string ...`
 
+![image-20220426102914469](javascript_day1.assets/image-20220426102914469.png)
+
 > for in의 대상은 object이고, for of의 대상은 array이다
+
+> 모든 while문은 모든 for문으로 치환 가능하고, 모든 for문은 모든 while문으로 치환 가능하다
 
 
 
