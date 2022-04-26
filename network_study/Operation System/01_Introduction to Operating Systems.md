@@ -96,11 +96,16 @@
   * *개인용 컴퓨터를 위해 만들어진 운영체제*
   * 용량이 작고, 단일 프로그램만 지원이 되는 옛날에 MS에서 만든 단일 작업용 운영체제
   * 단일 사용자용 운영체제, 메모리 관리 능력의 한계 (주 기억 장치: 640KB)
+  * 누더기같은 코드...
 * MS Windows
   * MS사의 다중 작업용 GUI 기반 운영 체제
   * Plug and Play, 네트워크 환경 강화
   * DOS용 응용 프로그램과 호환성 제공
-  * 불안정성
+  * ~~불안정성~~ (지금은 아닌걸로..)
   * 풍부한 지원 소프트웨어
 * Handheld device를 위한 OS
   * PalmOS, Pocket PC (WinCE), Tiny OS
+
+**운영 체제의 구조**
+
+![image-20220426175430846](01_Introduction to Operating Systems.assets/image-20220426175430846.png)
