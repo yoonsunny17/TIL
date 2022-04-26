@@ -112,3 +112,75 @@
 **`forEach` practice**
 
 ![image-20220426135642777](javascript_day2.assets/image-20220426135642777.png)
+
+![image-20220426141337314](javascript_day2.assets/image-20220426141337314.png)
+
+![image-20220426141722397](javascript_day2.assets/image-20220426141722397.png)
+
+![image-20220426141920730](javascript_day2.assets/image-20220426141920730.png)
+
+![image-20220426142752274](javascript_day2.assets/image-20220426142752274.png)
+
+![image-20220426143150990](javascript_day2.assets/image-20220426143150990.png)
+
+![image-20220426143505972](javascript_day2.assets/image-20220426143505972.png)
+
+* `some` method
+  * 배열의 요소 중 **하나라도 true 이면 true를 반환**
+
+* `every` method
+  * 배열의 **모든 요소가 true이면 true를 반환**
+
+
+
+### 객체(Objects)
+
+**객체의 정의와 특징**
+
+* 객체는 속성(property의 집합)이며,  중괄호 내부에 `key`와 `value`의 쌍으로 표현
+* `key`는 문자열 타입만 가능
+* `value`는 모든 타입(함수 포함) 가능
+* 객체 요소 접근은 점 또는 대괄호로 가능
+
+![image-20220426150704907](javascript_day2.assets/image-20220426150704907.png)
+
+![image-20220426151240852](javascript_day2.assets/image-20220426151240852.png)
+
+* 세번째 반환값이 `NaN` 인 이유!
+  * 메서드가 아닌 객체에서 바로 쓰는 this는 window를 의미한다
+
+![image-20220426151803685](javascript_day2.assets/image-20220426151803685.png)
+
+![image-20220426152413961](javascript_day2.assets/image-20220426152413961.png)
+
+![image-20220426153139966](javascript_day2.assets/image-20220426153139966.png)
+
+![image-20220426153755770](javascript_day2.assets/image-20220426153755770.png)
+
+
+
+**JSON**
+
+* JS에서는 JSON을 조작하기 위한 두 가지 내장 메서드를 제공
+  * `JSON.parse()`
+    * JSON => 자바스크립트 객체
+  * `JSON.stringify()`
+    * 자바스크립트 객체 => JSON
+
+![image-20220426155935339](javascript_day2.assets/image-20220426155935339.png)
+
+
+
+**lodash**
+
+* A modern JavaScript utility library
+  * 모듈성, 성능 및 추가 기능을 제공하는 JavaScript 유틸리티 라이브러리
+  * array, object 등 자료구조를 다룰 때 사용하는 유용하고 간편한 유틸리티 함수들을 제공
+
+
+
+![image-20220426162043172](javascript_day2.assets/image-20220426162043172.png)
+
+* deep copy
+
+![image-20220426161842749](javascript_day2.assets/image-20220426161842749.png)
