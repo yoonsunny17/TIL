@@ -17,3 +17,15 @@
 
 * 익명함수를 통해 event를 삭제할 수 없다
   * 말 그대로 이름이 없는 함수이므로 `addEventListener` 의 익명함수와, `removeEventListener`의 익명함수는 엄연히 다른 함수이기 때문이다!!!
+
+
+
+**practice**
+
++/- 버튼으로 숫자를 조작해보자!
+
+![image-20220428141322819](javascript_day4.assets/image-20220428141322819.png)
+
+![image-20220428141247257](javascript_day4.assets/image-20220428141247257.png)
+
+![image-20220428141303590](javascript_day4.assets/image-20220428141303590.png)
