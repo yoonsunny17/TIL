@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <button id="myBtn" v-on:click="plusNum">Click me</button>
+    <h3 id="myElem">{{ myNum }}</h3>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        myNum: 0
+      },
+      methods: {
+        plusNum() {
+          this.myNum += 1
+        }
+      }
+    })
+    // 일반적으로, 객체 안에 있는 메서드가 this를 쓰면? 그 객체를 가리킨다
+    // 화살표 함수를 쓰면, 하나 상위의 객체를 가리킨다
+  </script>
+</body>
+</html>

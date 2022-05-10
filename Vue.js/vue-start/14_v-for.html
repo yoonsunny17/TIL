@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="(fruit, idx) in fruits">
+        {{ idx }} - {{ fruit }}
+      </li>
+    </ul>
+
+    <h3>todo</h3>
+    <ul>
+      <!-- v-for와 v-if를 같이 쓰는것은 지양해야 한다! -->
+      <!-- <li v-for="todo in todos" v-if="!todo.completed"> -->
+
+        <!-- {{ todo.context }} -->
+      <!-- </li> -->
+      <!-- template tag: vue가 제공해주는 tag. 마크업 또는 vue data logic을 돌릴 수 있도록 도와주는 tag. 실제로 user가 볼 수는 없음-->
+      <template v-for="todo in todos" :key="`todo-id-${todo.id}`">
+        <li v-if="!todo.completed">{{ todo.context }}</li>
+      </template>
+    </ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        fruits: ['apple', 'banana', 'coconut'],
+        todos: [
+          {
+            id: 1,
+            context: 'todo1',
+            completed: false
+          },
+          {
+            id: 2,
+            context: 'todo2',
+            completed: true
+          },
+          {
+            id: 3,
+            context: 'todo3',
+            completed: false
+          },
+        ]
+      }
+    })
+  </script>
+</body>
+</html>

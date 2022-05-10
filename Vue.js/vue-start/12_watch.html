@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ num }}</h1>
+    <h3>x2 : {{ doubleNum }}</h3>
+    <button @click="plusNum">+</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        num: 0,
+      },
+      methods: {
+        plusNum() {
+          this.num += 1
+        }
+      },
+      watch: {
+        num(newValue, oldValue) {
+          // 실행할 로직
+          // 특정 데이터에 대한 수행은 맞지만, computed보다 조금 더 무거운 로직을 수행할 때 사용
+          console.log(newValue, oldValue)
+        }
+      },
+      computed: {
+        doubleNum() {
+          // computed는 항상 return을 해주어야 한다!
+          return this.num * 2
+        }
+      }
+    })
+  </script>
+</body>
+</html>

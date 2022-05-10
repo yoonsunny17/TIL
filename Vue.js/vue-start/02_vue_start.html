@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <p>{{ message }}</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    // new keyword를 붙여서 만드는 것 = 생성자 함수
+    // 1. 생성자 함수는 함수의 이름을 반드시 대문자로 시작해야 한다
+    // 2. 생성자 함수를 사용할 때는 앞에 new 라는 keyword를 사용함
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        message: 'hello'
+      }
+    })
+  </script>
+</body>
+</html>
