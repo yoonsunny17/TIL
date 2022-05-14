@@ -22,3 +22,51 @@ npm install. # package.json 의존하는 모듈 설치
 
 그냥 말 잘 들으면 잘 실행되니 걱정할 필요 없다!
 
+
+
+**Vue.js에 Bootstrap 적용하는 방법** (3 step!)
+
+1. 패키지 설치
+2. main.js에 추가
+3. Bootstrap-vue 사용
+
+*******
+
+```python
+npm install vue bootstrap-vue bootstrap  # 패키지 설치
+```
+
+```javascript
+// main.js에 추가
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
+```
+
+```html
+<!-- bootstrap.vue 사용 -->
+<!-- 대부분의 component는 b-로 시작한다! 외우는거 x 공식문서 참고하자 -->
+<template>
+  <div id="app">
+    <b-button>Button</b-button>
+    <b-button variant="danger">Button</b-button>
+    <b-button variant="success">Button</b-button>
+    <b-button variant="outline-primary">Button</b-button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'app'
+}
+</script>
+
+<style>
+#app {
+  margin: 20px;
+}
+</style>
+```
+
