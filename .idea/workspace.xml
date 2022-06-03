@@ -49,8 +49,8 @@
     <property name="last_opened_file_path" value="$USER_HOME$/ssafy7/webex-student/APS_algorithm/0318_문제풀이 2차" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Python.sol1">
-    <configuration name="sol1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.sol1 (2)">
+    <configuration name="sol1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,11 +58,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baekjoon/10773_제로" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/SWEA/03_S5719" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baekjoon/10773_제로/sol1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/SWEA/03_S5719/sol1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sol1 (2)" />
         <item itemvalue="Python.sol1" />
         <item itemvalue="Python.sol2" />
         <item itemvalue="Python.sol1 (3)" />
         <item itemvalue="Python.sol1 (4)" />
-        <item itemvalue="Python.sol1 (1)" />
       </list>
     </recent_temporary>
   </component>
